@@ -26,7 +26,9 @@ namespace tweet;
   * Feed parsing: https://github.com/themattharris/tmhOAuth
   * Hashtag/username parsing: https://github.com/mikenz/twitter-text-php
   */
- class TweetPHP {
+ use tweet\tmhOAuth;
+ use tweet\Twitter_Autolink;
+  class TweetPHP {
     private $tmhOAuth;
     private $options;
     private $tweet_found = false;
@@ -123,8 +125,6 @@ namespace tweet;
      */
     private function fetch_tweets () {
       $this->add_debug_item('Fetching fresh tweets using Twitter API.');
-
-      require_once(dirname(__FILE__) . '/lib/tmhOAuth/tmhOAuth.php');
 
       // Creates a tmhOAuth object.
       $this->tmhOAuth = new tmhOAuth(array(
@@ -270,7 +270,6 @@ namespace tweet;
      * in a tweet to HTML links.
      */
     public function autolink ($tweet) {
-      require_once(dirname(__FILE__) . '/lib/twitter-text-php/lib/Twitter/Autolink.php');
 
       $autolinked_tweet = Twitter_Autolink::create($tweet, false)
         ->setNoFollow($this->options['nofollow_links'])

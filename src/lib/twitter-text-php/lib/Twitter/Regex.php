@@ -1,4 +1,5 @@
 <?php
+namespace tweet;
 /**
  * @author     Mike Cochrane <mikec@mikenz.geek.nz>
  * @author     Nick Pope <nick@nickpope.me.uk>

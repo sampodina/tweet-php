@@ -6,7 +6,7 @@
  * @package    Twitter
  */
 
-require_once 'Regex.php';
+use tweet\Twitter_Regex;
 
 /**
  * Twitter HitHighlighter Class
