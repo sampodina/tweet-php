@@ -1,5 +1,5 @@
 <?php
-namespace TweetPHP;
+namespace tweet;
  /**
   * TweetPHP
   *
