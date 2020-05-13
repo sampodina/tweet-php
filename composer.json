@@ -1,0 +1,25 @@
+{
+    "name": "jnicol/tweet-php",
+    "type": "library",
+    "description": "A PHP class for querying the Twitter API and rendering tweets as an HTML list",
+    "keywords": ["php","twitter","api"],
+    "homepage": "http://jonathannicol.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Nicol",
+            "email": "info@jonathannicol.com",
+            "homepage": "http://jonathannicol.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "TweetPHP": "src/"
+        }
+    }
+}
