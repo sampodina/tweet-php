@@ -1,4 +1,5 @@
 <?php
+namespace tweet\lib\twitterText;
 /**
  * @author     Nick Pope <nick@nickpope.me.uk>
  * @copyright  Copyright © 2010, Nick Pope
@@ -6,7 +7,7 @@
  * @package    Twitter
  */
 
-use tweet\Twitter_Regex;
+use tweet\lib\twitterText\Twitter_Regex;
 
 /**
  * Twitter HitHighlighter Class

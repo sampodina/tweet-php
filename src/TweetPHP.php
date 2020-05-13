@@ -26,8 +26,8 @@ namespace tweet;
   * Feed parsing: https://github.com/themattharris/tmhOAuth
   * Hashtag/username parsing: https://github.com/mikenz/twitter-text-php
   */
- use tweet\tmhOAuth;
- use tweet\Twitter_Autolink;
+ use tweet\lib\tmhOAuth;
+ use tweet\lib\twitterText\Twitter_Autolink;
   class TweetPHP {
     private $tmhOAuth;
     private $options;

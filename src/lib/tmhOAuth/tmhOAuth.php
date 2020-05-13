@@ -1,5 +1,5 @@
 <?php
-namespace tweet;
+namespace tweet\lib\tmhOAuth;
 /**
  * tmhOAuth
  *

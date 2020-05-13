@@ -1,5 +1,5 @@
 <?php
-namespace tweet;
+namespace tweet\lib\twitterText;
 /**
  * @author     Mike Cochrane <mikec@mikenz.geek.nz>
  * @author     Nick Pope <nick@nickpope.me.uk>
