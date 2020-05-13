@@ -16,12 +16,11 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",
-        "nojimage/twitter-text-php": "dev-master"
+        "nojimage/twitter-text-php": "dev-master",
+        "themattharris/tmhoauth": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "tweet\\lib\\":"src/lib/tmhOAuth/",
-            "tweet\\lib\\twitterText\\":"src/lib//twitter-text-php/lib/Twitter/",
             "tweet\\": "src/"
         }
     }
