@@ -19,8 +19,8 @@
     },
     "autoload": {
         "psr-4": {
-            "tweet\\lib":"src/lib/tmhOAuth/",
-            "tweet\\lib\\twitterText":"src/lib//twitter-text-php/lib/Twitter/",
+            "tweet\\lib\\":"src/lib/tmhOAuth/",
+            "tweet\\lib\\twitterText\\":"src/lib//twitter-text-php/lib/Twitter/",
             "tweet\\": "src/"
         }
     }
