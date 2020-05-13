@@ -278,7 +278,7 @@ namespace tweet;
         ->setUsernameClass('')
         ->setHashtagClass('')
         ->setURLClass('')
-        ->addLinks();
+        ->autoLink($tweet);
 
       return $autolinked_tweet;
     }
