@@ -27,7 +27,7 @@ namespace tweet;
   * Hashtag/username parsing: https://github.com/mikenz/twitter-text-php
   */
  use tweet\lib\tmhOAuth;
- use tweet\lib\twitterText\Twitter_Autolink;
+use Twitter\Text\Autolink;
   class TweetPHP {
     private $tmhOAuth;
     private $options;
@@ -271,7 +271,7 @@ namespace tweet;
      */
     public function autolink ($tweet) {
 
-      $autolinked_tweet = Twitter_Autolink::create($tweet, false)
+      $autolinked_tweet = Autolink::create($tweet, false)
         ->setNoFollow($this->options['nofollow_links'])
         ->setExternal(false)
         ->setTarget('')
